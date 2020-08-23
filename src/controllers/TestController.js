@@ -4,7 +4,10 @@ module.exports = {
     },
 
     async create(request, response) {
-        console.log(request);
+        console.log(request.body);
+        console.log(request.json);
+        //console.log(request);
         return response.json(request.body);
     }
 }
+
